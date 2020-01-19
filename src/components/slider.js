@@ -37,13 +37,13 @@ const Slider = () => (
           font-weight: 500;
           letter-spacing: 0.1em;
           line-height: 1.5;
-          margin: 0 0 0.65em;
+          margin: 2rem 0 0.65rem;
           padding: 2rem 1rem 0;
           text-transform: uppercase;
           vertical-align: baseline;
         `}
       >
-        Haz <br /> Tu Cita <br /> Hoy Mismo!
+        Haz <br /> Tu Cita!
       </p>
       <a
         href="https://wa.me/18099172971"
