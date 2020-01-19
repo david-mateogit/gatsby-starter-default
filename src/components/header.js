@@ -28,7 +28,6 @@ const Header = () => (
       css={css`
         text-align: right;
         background: #916dd5;
-        border-bottom: 1px solid #ddd;
         height: 150px;
         display: flex;
         justify-content: space-between;
@@ -153,7 +152,6 @@ const Header = () => (
       css={css`
         background: #f0e3ff;
         color: #916dd5;
-        border-bottom: 1px solid #ddd;
         display: flex;
         justify-content: flex-end;
         padding: 0.7rem 5vw;

@@ -13,6 +13,7 @@ const Slider = () => (
       overflow: hidden;
       display: flex;
       margin-top: 0;
+      padding: 0;
     `}
   >
     <div
@@ -24,7 +25,7 @@ const Slider = () => (
         height: 385px;
         width: 50%;
         margin: 0;
-        padding: 3rem;
+        padding: 0;
         text-align: center;
       `}
     >
@@ -37,7 +38,7 @@ const Slider = () => (
           letter-spacing: 0.1em;
           line-height: 1.5;
           margin: 0 0 0.65em;
-          padding: 0;
+          padding: 2rem 1rem 0;
           text-transform: uppercase;
           vertical-align: baseline;
         `}
