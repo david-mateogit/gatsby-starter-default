@@ -1,7 +1,6 @@
 import { createGlobalStyle, css } from "styled-components";
 import React from "react";
 import PropTypes from "prop-types";
-import { useStaticQuery, graphql } from "gatsby";
 
 import Header from "./header";
 
@@ -56,49 +55,33 @@ const GlobalStyle = createGlobalStyle`
 
 `;
 
-const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `);
-
-  return (
-    <>
-      <GlobalStyle />
-      <Header />
-      <div
+const Layout = ({ children }) => (
+  <>
+    <GlobalStyle />
+    <Header />
+    <div
+      css={css`
+        margin: 0 auto;
+        max-width: 960;
+        padding: 0;
+      `}
+    >
+      <main
         css={css`
           margin: 0 auto;
-          max-width: 960;
-          padding: 0px 1.0875rem 1.45rem;
-          padding-top: 0;
-          @media (max-width: 550px) {
-            padding: 0;
-          }
+          max-width: 100vw;
+          width: 950px;
         `}
       >
-        <main
-          css={css`
-            margin: 0 auto;
-            max-width: 100vw;
-            width: 950px;
-          `}
-        >
-          {children}
-        </main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
-      </div>
-    </>
-  );
-};
+        {children}
+      </main>
+      <footer>
+        © {new Date().getFullYear()}, Built with
+        <a href="https://www.gatsbyjs.org">Gatsby</a>
+      </footer>
+    </div>
+  </>
+);
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,

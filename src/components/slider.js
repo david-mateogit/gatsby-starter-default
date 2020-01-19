@@ -49,6 +49,9 @@ const Slider = () => (
         href="https://wa.me/18099172971"
         target="_blank"
         rel="noopener noreferrer"
+        css={css`
+          margin-bottom: 1rem;
+        `}
       >
         <FaWhatsapp size="8rem" color="green" />
       </a>

@@ -1,12 +1,6 @@
 import React from "react";
-import styled, { css } from "styled-components";
-import { Link } from "gatsby";
-import {
-  FaTooth,
-  FaFacebookSquare,
-  FaInstagram,
-  FaMapMarkerAlt,
-} from "react-icons/fa";
+import { css } from "styled-components";
+import { FaMapMarkerAlt } from "react-icons/fa";
 import { MdPhone } from "react-icons/md";
 import Button from "./button";
 
