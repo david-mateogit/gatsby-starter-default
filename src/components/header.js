@@ -18,7 +18,7 @@ const Logo = styled(Link)`
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  text-align: right;
+  text-align: left;
 `;
 
 const Header = () => (
@@ -28,7 +28,6 @@ const Header = () => (
       css={css`
         text-align: right;
         background: #916dd5;
-        height: 150px;
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
@@ -38,9 +37,6 @@ const Header = () => (
           padding-left: calc((100vw - 750px - 0.5rem) / 2);
           padding-right: calc((100vw - 750px - 0.5rem) / 2);
         }
-        @media (max-width: 550px) {
-          height: 120px;
-        }
       `}
     >
       <Logo to="/">
@@ -49,7 +45,7 @@ const Header = () => (
           <h1
             css={css`
               color: #3e206d;
-              font-size: 2.5rem;
+              font-size: 2.2rem;
               font-weight: bold;
               text-transform: uppercase;
               margin: 0;
@@ -64,7 +60,7 @@ const Header = () => (
           </h1>{" "}
           <h1
             css={css`
-              font-size: 2rem;
+              font-size: 1.8rem;
               color: #f0e3ff;
               margin: 0.5rem;
               @media (max-width: 550px) {
