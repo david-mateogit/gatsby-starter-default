@@ -7,6 +7,7 @@ import {
   FaInstagram,
   FaMapMarkerAlt,
 } from "react-icons/fa";
+import Navbar from "./navbar";
 
 const Logo = styled(Link)`
   color: #f0e3ff;
@@ -15,12 +16,14 @@ const Logo = styled(Link)`
   text-decoration: none;
   line-height: 0.5;
   display: flex;
+  justify-content: flex-start;
   align-items: center;
   text-align: right;
 `;
 
 const Header = () => (
   <>
+    <Navbar />
     <header
       css={css`
         text-align: right;
@@ -30,10 +33,14 @@ const Header = () => (
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
-        padding: 0.5rem 5vw;
+        padding: 0.5rem 1vw;
+        margin-top: 0;
         @media (min-width: 550px) {
           padding-left: calc((100vw - 750px - 0.5rem) / 2);
           padding-right: calc((100vw - 750px - 0.5rem) / 2);
+        }
+        @media (max-width: 550px) {
+          height: 120px;
         }
       `}
     >
@@ -41,17 +48,30 @@ const Header = () => (
         <FaTooth size="6rem" color="white" />
         <div>
           <p
-            style={{
-              color: "#3e206d",
-              fontSize: "2.5rem",
-              fontWeight: "bold",
-              textTransform: "uppercase",
-            }}
+            css={css`
+              color: #3e206d;
+              font-size: 2.5rem;
+              font-weight: bold;
+              text-transform: uppercase;
+
+              @media (max-width: 550px) {
+                font-size: 2.3rem;
+              }
+            `}
           >
             {" "}
             Clínica Dental
           </p>{" "}
-          <p style={{ fontSize: "2rem" }}>Dra. Claritza Sanchez</p>
+          <p
+            css={css`
+              font-size: 2rem;
+              @media (max-width: 550px) {
+                font-size: 1.8rem;
+              }
+            `}
+          >
+            Dra. Claritza Sanchez
+          </p>
         </div>
       </Logo>
       <div
@@ -60,6 +80,9 @@ const Header = () => (
           display: flex;
           flex-direction: column;
           margin-bottom: 3px;
+          @media (max-width: 550px) {
+            display: none;
+          }
         `}
       >
         <a
@@ -69,6 +92,9 @@ const Header = () => (
           css={css`
             text-decoration: none;
             color: #f0e3ff;
+            @media (max-width: 550px) {
+              display: none;
+            }
           `}
         >
           <FaMapMarkerAlt /> Carretera Sosúa Cabarete <br /> esq. Dr. Rosen,
@@ -82,6 +108,10 @@ const Header = () => (
             color: #3e206d;
             font-weight: bold;
             margin-top: 2px;
+
+            @media (max-width: 550px) {
+              font-size: 1rem;
+            }
           `}
         >
           (809) 571-3895
@@ -131,6 +161,9 @@ const Header = () => (
         @media (min-width: 550px) {
           padding-left: calc((100vw - 750px - 0.5rem) / 2);
           padding-right: calc((100vw - 750px - 0.5rem) / 2);
+        }
+        @media (max-width: 550px) {
+          display: none;
         }
       `}
     >
