@@ -62,7 +62,7 @@ const Layout = ({ children }) => (
     <div
       css={css`
         margin: 0 auto;
-        max-width: 960;
+        max-width: 960px;
         padding: 0;
       `}
     >
@@ -70,7 +70,6 @@ const Layout = ({ children }) => (
         css={css`
           margin: 0 auto;
           max-width: 100vw;
-          width: 950px;
         `}
       >
         {children}

@@ -7,7 +7,7 @@ import BackgroundSlider from "gatsby-image-background-slider";
 const Carousel = () => (
   <div
     css={css`
-      height: 400px;
+      height: 500px;
       width: 100vw;
       max-width: 960px;
       overflow: hidden;

@@ -8,7 +8,7 @@ import Carousel from "./carousel";
 const Slider = () => (
   <section
     css={css`
-      height: 400px;
+      height: 500px;
       max-width: 960px;
       overflow: hidden;
       display: flex;
@@ -22,7 +22,7 @@ const Slider = () => (
         border-width: 0;
         color: rgba(255, 255, 255, 0.75);
         display: block;
-        height: 385px;
+        height: 485px;
         width: 50%;
         margin: 0;
         padding: 0;
