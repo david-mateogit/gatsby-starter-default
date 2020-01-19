@@ -29,7 +29,7 @@ const Slider = () => (
         text-align: center;
       `}
     >
-      <h1
+      <p
         css={css`
           border-width: 0;
           color: #fff;
@@ -43,14 +43,14 @@ const Slider = () => (
           vertical-align: baseline;
         `}
       >
-        Haz Tu Cita Hoy Mismo!
-      </h1>
+        Haz <br /> Tu Cita <br /> Hoy Mismo!
+      </p>
       <a
         href="https://wa.me/18099172971"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <FaWhatsapp size="8rem" />
+        <FaWhatsapp size="8rem" color="green" />
       </a>
     </div>
     <Carousel />

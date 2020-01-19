@@ -46,12 +46,13 @@ const Header = () => (
       <Logo to="/">
         <FaTooth size="6rem" color="white" />
         <div>
-          <p
+          <h1
             css={css`
               color: #3e206d;
               font-size: 2.5rem;
               font-weight: bold;
               text-transform: uppercase;
+              margin: 0;
 
               @media (max-width: 550px) {
                 font-size: 2.3rem;
@@ -60,17 +61,19 @@ const Header = () => (
           >
             {" "}
             Clínica Dental
-          </p>{" "}
-          <p
+          </h1>{" "}
+          <h1
             css={css`
               font-size: 2rem;
+              color: #f0e3ff;
+              margin: 0.5rem;
               @media (max-width: 550px) {
                 font-size: 1.8rem;
               }
             `}
           >
             Dra. Claritza Sanchez
-          </p>
+          </h1>
         </div>
       </Logo>
       <div
