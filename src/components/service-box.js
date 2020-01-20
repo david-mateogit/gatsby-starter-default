@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, graphql, useStaticQuery } from "gatsby";
+import { graphql, useStaticQuery } from "gatsby";
 import styled, { css } from "styled-components";
 import BackgroundImage from "gatsby-background-image";
 

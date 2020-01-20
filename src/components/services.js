@@ -12,7 +12,7 @@ const serviceList = [
 ];
 
 const Services = () => (
-  <section>
+  <section id="services">
     <div
       css={css`
         background-color: #656dba;

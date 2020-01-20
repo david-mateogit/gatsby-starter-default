@@ -1,5 +1,7 @@
 import * as React from "react";
 import styled, { css } from "styled-components";
+
+import AnchorLink from "react-anchor-link-smooth-scroll";
 import { Link } from "gatsby";
 import {
   FaTooth,
@@ -171,12 +173,22 @@ const Header = () => (
           color: #222;
         `}
       >
-        <Link to="#" activeClassName="current-page" style={{ margin: "10px" }}>
+        <AnchorLink
+          href="#services"
+          css={css`
+            margin: 1rem;
+          `}
+        >
           Nuestros Servicios
-        </Link>
-        <Link to="#" activeClassName="current-page">
+        </AnchorLink>
+        <AnchorLink
+          href="#about"
+          css={css`
+            margin: 1rem;
+          `}
+        >
           Conocenos
-        </Link>
+        </AnchorLink>
       </nav>
     </section>
   </>
