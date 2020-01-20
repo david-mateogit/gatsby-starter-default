@@ -3,6 +3,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import Header from "./header";
+import Footer from "./footer";
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -45,10 +46,6 @@ const GlobalStyle = createGlobalStyle`
       }
     }
 
-    strong {
-      color: #222;
-    }
-
     li {
       margin-top: 0.25rem;
     }
@@ -74,11 +71,8 @@ const Layout = ({ children }) => (
       >
         {children}
       </main>
-      <footer>
-        © {new Date().getFullYear()}, Built with
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
-      </footer>
     </div>
+    <Footer />
   </>
 );
 

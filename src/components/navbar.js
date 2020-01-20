@@ -10,7 +10,7 @@ const Navbar = () => (
       background: #3e206d;
       color: #f0e3ff;
       display: flex;
-      justify-content: flex-end;
+      justify-content: center;
       padding: 0.3rem 5vw;
       margin-top: 0;
       @media (min-width: 551px) {

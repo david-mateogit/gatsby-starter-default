@@ -23,25 +23,13 @@ const Logo = styled(Link)`
   text-align: left;
 `;
 
-const NavLink = styled(AnchorLink)`
-  font-weight: bold;
-  font-size: 1rem;
-  color: #f0e3ff;
-  text-decoration: none;
-  margin: 1rem;
-
-  &:hover {
-    border-bottom: 1px solid white;
-  }
-`;
-
-const Header = () => (
+const Footer = () => (
   <>
     <Navbar />
-    <header
+    <footer
       css={css`
         text-align: right;
-        background: #916dd5;
+        background: #3e206d;
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
@@ -58,7 +46,7 @@ const Header = () => (
         <div>
           <h1
             css={css`
-              color: #3e206d;
+              color: #916dd5;
               font-size: 2.2rem;
               font-weight: bold;
               text-transform: uppercase;
@@ -117,7 +105,7 @@ const Header = () => (
           css={css`
             font-size: 1.8rem;
             text-decoration: none;
-            color: #3e206d;
+            color: #f0e3ff;
             font-weight: bold;
             margin-top: 2px;
 
@@ -160,35 +148,8 @@ const Header = () => (
           </a>
         </div>
       </div>
-    </header>
-    <section
-      css={css`
-        background: #3e206d;
-        padding: 0 5vw;
-        margin-top: 0;
-        margin-bottom: 2rem;
-        @media (min-width: 550px) {
-          padding-left: calc((100vw - 750px - 0.5rem) / 2);
-          padding-right: calc((100vw - 750px - 0.5rem) / 2);
-        }
-        @media (max-width: 550px) {
-          display: none;
-        }
-      `}
-    >
-      <nav
-        css={css`
-          margin-top: 0;
-          padding: 0 1rem;
-          display: flex;
-          justify-content: space-evenly;
-        `}
-      >
-        <NavLink href="#services">Nuestros Servicios</NavLink>
-        <NavLink href="#about">Conocenos</NavLink>
-      </nav>
-    </section>
+    </footer>
   </>
 );
 
-export default Header;
+export default Footer;
