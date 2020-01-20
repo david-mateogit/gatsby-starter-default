@@ -8,7 +8,11 @@ const Insta = () => {
   const { username } = instaPhotos[0];
 
   return (
-    <section>
+    <section
+      css={css`
+        padding: 1rem;
+      `}
+    >
       <h2>Fotos de Instagram de @{username}</h2>
       <div
         css={css`

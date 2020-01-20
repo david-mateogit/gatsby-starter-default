@@ -7,6 +7,10 @@ const About = () => (
     id="about"
     css={css`
       height: 600px;
+      margin-bottom: 2rem;
+      @media (max-width: 550px) {
+        height: unset;
+      }
     `}
   >
     <div
@@ -34,20 +38,24 @@ const About = () => (
     <div
       css={css`
         display: flex;
-        margin-bottom: 2rem;
+        margin: 1rem;
         justify-content: space-around;
         align-items: center;
       `}
     >
       <div
         css={css`
-          width: 50%;
+          width: 40%;
+          padding: 0.5rem;
         `}
       >
         <h1>Dra. Claritza Sanchez.</h1>
         <p
           css={css`
             font-size: 1.5rem;
+            @media (max-width: 550px) {
+              font-size: 0.8rem;
+            }
           `}
         >
           Somos un equipo de profesionales que trabajamos para devolver la salud
