@@ -101,7 +101,7 @@ const Header = () => (
         <a
           href="tel:8095713895"
           css={css`
-            font-size: 1.5rem;
+            font-size: 1.8rem;
             text-decoration: none;
             color: #3e206d;
             font-weight: bold;
