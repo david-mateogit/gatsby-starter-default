@@ -66,8 +66,8 @@ const Header = () => (
               text-transform: uppercase;
               margin: 0;
 
-              @media (max-width: 550px) {
-                font-size: 2.3rem;
+              @media (max-width: 600px) {
+                font-size: 1.8rem;
               }
               @media (max-width: 371px) {
                 font-size: 2rem;
@@ -85,6 +85,9 @@ const Header = () => (
               font-size: 1.8rem;
               color: #f0e3ff;
               margin: 0.5rem;
+              @media (max-width: 600px) {
+                font-size: 1.4rem;
+              }
               @media (max-width: 550px) {
                 font-size: 1.8rem;
               }
@@ -124,7 +127,7 @@ const Header = () => (
           `}
         >
           <FaMapMarkerAlt /> Carretera Sosúa Cabarete <br /> esq. Dr. Rosen,
-          Sosúa 57000 <br />
+          Sosúa. <br />
         </a>
         <a
           href="tel:8095713895"
@@ -135,8 +138,8 @@ const Header = () => (
             font-weight: bold;
             margin-top: 2px;
 
-            @media (max-width: 550px) {
-              font-size: 1rem;
+            @media (max-width: 600px) {
+              font-size: 1.7rem;
             }
           `}
         >

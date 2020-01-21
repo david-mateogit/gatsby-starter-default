@@ -110,7 +110,7 @@ const Footer = () => (
           `}
         >
           <FaMapMarkerAlt /> Carretera Sosúa Cabarete <br /> esq. Dr. Rosen,
-          Sosúa 57000 <br />
+          Sosúa <br />
         </a>
         <a
           href="tel:8095713895"
@@ -121,8 +121,8 @@ const Footer = () => (
             font-weight: bold;
             margin-top: 2px;
 
-            @media (max-width: 550px) {
-              font-size: 1rem;
+            @media (max-width: 600px) {
+              font-size: 1.5rem;
             }
           `}
         >

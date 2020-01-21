@@ -11,7 +11,7 @@ const Insta = () => {
     <section
       css={css`
         padding: 1rem;
-        margin-top: 1rem;
+        margin: 1rem 0;
       `}
     >
       <h2>Fotos de Instagram de @{username}</h2>
