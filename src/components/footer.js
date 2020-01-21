@@ -32,7 +32,7 @@ const Footer = () => (
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
-        padding: 0.5rem 1vw 0;
+        padding: 0.5rem 1vw;
         margin: 0;
         margin-top: -10px;
         @media (min-width: 550px) {

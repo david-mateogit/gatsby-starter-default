@@ -25,13 +25,14 @@ const Logo = styled(Link)`
 
 const NavLink = styled(AnchorLink)`
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 1.1rem;
+  padding: 0 0 0.3rem;
   color: #f0e3ff;
   text-decoration: none;
   margin: 1rem;
 
   &:hover {
-    border-bottom: 1px solid white;
+    box-shadow: inset 0 -3px 0 0 white;
   }
 `;
 
@@ -193,7 +194,9 @@ const Header = () => (
         css={css`
           margin-top: 0;
           padding: 0 1rem;
+          height: 100%;
           display: flex;
+          box-sizing: border-box;
           justify-content: space-evenly;
         `}
       >
