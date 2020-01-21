@@ -78,6 +78,9 @@ const Header = () => (
               @media (max-width: 330px) {
                 font-size: 1.8rem;
               }
+              @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+                font-size: 1.7rem;
+              }
             `}
           >
             {" "}
@@ -99,6 +102,9 @@ const Header = () => (
               }
               @media (max-width: 332px) {
                 font-size: 1.4rem;
+              }
+              @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+                font-size: 1.2rem;
               }
             `}
           >
@@ -142,6 +148,9 @@ const Header = () => (
             margin-top: 2px;
 
             @media (max-width: 600px) {
+              font-size: 1.7rem;
+            }
+            @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
               font-size: 1.7rem;
             }
           `}
