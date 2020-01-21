@@ -12,6 +12,12 @@ const Intro = () => (
         font-size: 3.8rem;
         margin: 0 1rem;
         padding: 1rem;
+        @media (max-width: 332px) {
+          font-size: 2rem;
+        }
+        @media (max-width: 400px) {
+          font-size: 2.5rem;
+        }
       `}
     >
       Restaurando sonrisas por mas de 10 años.

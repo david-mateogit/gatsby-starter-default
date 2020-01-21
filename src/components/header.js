@@ -39,6 +39,7 @@ const Header = () => (
   <>
     <Navbar />
     <header
+      id="header"
       css={css`
         text-align: right;
         background: #916dd5;
@@ -67,6 +68,12 @@ const Header = () => (
               @media (max-width: 550px) {
                 font-size: 2.3rem;
               }
+              @media (max-width: 371px) {
+                font-size: 2rem;
+              }
+              @media (max-width: 332px) {
+                font-size: 1.8rem;
+              }
             `}
           >
             {" "}
@@ -79,6 +86,12 @@ const Header = () => (
               margin: 0.5rem;
               @media (max-width: 550px) {
                 font-size: 1.8rem;
+              }
+              @media (max-width: 361px) {
+                font-size: 1.6rem;
+              }
+              @media (max-width: 332px) {
+                font-size: 1.4rem;
               }
             `}
           >
@@ -100,7 +113,7 @@ const Header = () => (
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://www.google.com/maps/dir/19.4436952,-70.6811497/Clinica+Dental+Dra+Claritza+Sanchez,+Carretera+Sos%C3%BAa+cabarete+esq,+Dr.+Rosen,+Sos%C3%BAa+57000/@19.6035907,-70.7404661,11z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x8eb1e3708f32166f:0x2de2f93b48a5594f!2m2!1d-70.5137815!2d19.7635945"
+          href="https://goo.gl/maps/Sj7X3iGNqPTfDBPU7"
           css={css`
             text-decoration: none;
             color: #f0e3ff;
@@ -148,7 +161,7 @@ const Header = () => (
             <FaFacebookSquare color="#f0e3ff" size="2rem" />
           </a>
           <a
-            href="https://www.instagram.com/p/BzfpWtdoIuP/"
+            href="https://www.instagram.com/dentaldrsanchez/"
             target="_blank"
             rel="noopener noreferrer"
             title="Siguenos en Instagram"

@@ -46,7 +46,7 @@ const Slider = () => (
         Haz <br /> Tu Cita!
       </p>
       <a
-        href="https://wa.me/18099172971"
+        href="https://wa.me/18496516601"
         target="_blank"
         rel="noopener noreferrer"
         css={css`

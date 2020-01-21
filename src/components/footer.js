@@ -2,7 +2,6 @@ import * as React from "react";
 import styled, { css } from "styled-components";
 
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import { Link } from "gatsby";
 import {
   FaTooth,
   FaFacebookSquare,
@@ -11,7 +10,7 @@ import {
 } from "react-icons/fa";
 import Navbar from "./navbar";
 
-const Logo = styled(Link)`
+const Logo = styled(AnchorLink)`
   color: #f0e3ff;
   font-size: 1rem;
   padding: 0.35rem;
@@ -33,15 +32,16 @@ const Footer = () => (
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
-        padding: 0.5rem 1vw;
-        margin-top: 0;
+        padding: 0.5rem 1vw 0;
+        margin: 0;
+        margin-top: -10px;
         @media (min-width: 550px) {
           padding-left: calc((100vw - 750px - 0.5rem) / 2);
           padding-right: calc((100vw - 750px - 0.5rem) / 2);
         }
       `}
     >
-      <Logo to="/">
+      <Logo href="#header">
         <FaTooth size="6rem" color="white" />
         <div>
           <h1
@@ -55,6 +55,12 @@ const Footer = () => (
               @media (max-width: 550px) {
                 font-size: 2.3rem;
               }
+              @media (max-width: 371px) {
+                font-size: 2rem;
+              }
+              @media (max-width: 332px) {
+                font-size: 1.8rem;
+              }
             `}
           >
             {" "}
@@ -67,6 +73,12 @@ const Footer = () => (
               margin: 0.5rem;
               @media (max-width: 550px) {
                 font-size: 1.8rem;
+              }
+              @media (max-width: 361px) {
+                font-size: 1.6rem;
+              }
+              @media (max-width: 332px) {
+                font-size: 1.4rem;
               }
             `}
           >
@@ -88,7 +100,7 @@ const Footer = () => (
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://www.google.com/maps/dir/19.4436952,-70.6811497/Clinica+Dental+Dra+Claritza+Sanchez,+Carretera+Sos%C3%BAa+cabarete+esq,+Dr.+Rosen,+Sos%C3%BAa+57000/@19.6035907,-70.7404661,11z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x8eb1e3708f32166f:0x2de2f93b48a5594f!2m2!1d-70.5137815!2d19.7635945"
+          href="https://goo.gl/maps/Sj7X3iGNqPTfDBPU7"
           css={css`
             text-decoration: none;
             color: #f0e3ff;
@@ -136,7 +148,7 @@ const Footer = () => (
             <FaFacebookSquare color="#f0e3ff" size="2rem" />
           </a>
           <a
-            href="https://www.instagram.com/p/BzfpWtdoIuP/"
+            href="https://www.instagram.com/dentaldrsanchez/"
             target="_blank"
             rel="noopener noreferrer"
             title="Siguenos en Instagram"
