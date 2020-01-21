@@ -69,10 +69,13 @@ const Header = () => (
               @media (max-width: 600px) {
                 font-size: 1.8rem;
               }
-              @media (max-width: 371px) {
+              @media (max-width: 500px) {
+                font-size: 2.2rem;
+              }
+              @media (max-width: 370px) {
                 font-size: 2rem;
               }
-              @media (max-width: 332px) {
+              @media (max-width: 330px) {
                 font-size: 1.8rem;
               }
             `}
