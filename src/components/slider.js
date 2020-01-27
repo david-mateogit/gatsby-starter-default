@@ -1,7 +1,7 @@
 import React from "react";
 
 import { css } from "styled-components";
-import { FaWhatsapp } from "react-icons/fa";
+import whatsapp from "../images/whatsapp.svg";
 
 import Carousel from "./carousel";
 
@@ -37,7 +37,7 @@ const Slider = () => (
           font-weight: 500;
           letter-spacing: 0.1em;
           line-height: 1.5;
-          margin: 2rem 0 0.65rem;
+          margin: 2rem 0 0.95rem;
           padding: 2rem 1rem 0;
           text-transform: uppercase;
           vertical-align: baseline;
@@ -53,7 +53,7 @@ const Slider = () => (
           margin-bottom: 1rem;
         `}
       >
-        <FaWhatsapp size="8rem" color="green" />
+        <img src={whatsapp} alt="8095713895" style={{ width: "100px" }} />
       </a>
     </div>
     <Carousel />

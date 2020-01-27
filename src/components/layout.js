@@ -30,6 +30,7 @@ const GlobalStyle = createGlobalStyle`
       /* remove margin for the main div that Gatsby mounts into */
       > div {
         margin-top: 0;
+        margin-bottom: -20px;
       }
     }
 
