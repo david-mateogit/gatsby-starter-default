@@ -36,8 +36,8 @@ const Footer = () => (
         margin: 0;
         margin-top: -10px;
         @media (min-width: 550px) {
-          padding-left: calc((100vw - 750px - 0.5rem) / 2);
-          padding-right: calc((100vw - 750px - 0.5rem) / 2);
+          padding-left: calc((100vw - 950px - 0.5rem) / 2);
+          padding-right: calc((100vw - 950px - 0.5rem) / 2);
         }
       `}
     >

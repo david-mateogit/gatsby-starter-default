@@ -50,8 +50,8 @@ const Header = () => (
         padding: 0.5rem 1vw;
         margin-top: 0;
         @media (min-width: 550px) {
-          padding-left: calc((100vw - 750px - 0.5rem) / 2);
-          padding-right: calc((100vw - 750px - 0.5rem) / 2);
+          padding-left: calc((100vw - 950px - 0.5rem) / 2);
+          padding-right: calc((100vw - 950px - 0.5rem) / 2);
         }
       `}
     >
